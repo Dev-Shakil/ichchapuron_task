@@ -60,7 +60,7 @@ export default async function Home({searchParams}) {
           {/* Pagination controls */}
           <div className="gap-3 items-center flex justify-center py-4">
               {/* Previous Button */}
-              <Link href={`/page=${page - 1}`} passHref>
+              <Link href={`/?page=${page - 1}`} passHref>
                 <Button variant="outline" disabled={page === 1}>
                   Previous
                 </Button>
@@ -71,7 +71,7 @@ export default async function Home({searchParams}) {
               </span>
 
               {/* Next Button */}
-              <Link href={`/page=${page + 1}`} passHref>
+              <Link href={`/?page=${page + 1}`} passHref>
                 <Button variant="outline" disabled={page === totalPages}>
                   Next
                 </Button>
